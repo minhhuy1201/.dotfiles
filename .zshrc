@@ -82,6 +82,7 @@ alias mkdir='mkdir -pv'
 alias cp='cp -iv'
 alias mv='mv -iv'
 alias rm='rm -iv'
+alias rmf='rm -rf'
 alias rmdir='rmdir -v'
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
@@ -120,3 +121,7 @@ export NVM_DIR="$HOME/.nvm"
 
 # --- GIT ALIAS ---
 alias git-pop-all='while git stash list | grep .; do git stash pop; done'
+
+# --- OPENVPN3 ALIAS ---
+alias vpn-import='openvpn3 config-import --config'
+alias vpn-list='openvpn3 profile-list'
